@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<beans>
+ <annotation base-package="cn.mayfly.test.bijection"/>
+</beans>

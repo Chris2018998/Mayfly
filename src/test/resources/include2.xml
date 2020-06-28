@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<beans>
+ <bean id ="keyBoard" class="cn.mayfly.test.include.object.KeyBoard">
+ 	 <property name="vendor" value="IBM"/>
+ 	 <property name="version"  value="3.5"/>
+ </bean>
+ <bean id ="monitor" class="cn.mayfly.test.include.object.Monitor">
+	  <property name="vendor" value="LG"/>
+ 	 <property name="size"  value="21 inch"/>
+ </bean>
+</beans>

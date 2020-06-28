@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<beans>
+   <annotation base-package="cn.mayfly.test.autowired"/>
+   
+   <bean id ="name" class="java.lang.String">
+    <constructor>
+      <constructor-arg value="Chris"/>
+     </constructor>
+  </bean>
+  <bean id ="age" class="java.lang.Integer">
+     <constructor>
+       <constructor-arg value="28"/>
+     </constructor>
+  </bean>
+</beans>

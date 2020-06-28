@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<beans>
+ <bean id ="Bean1" class="cn.mayfly.test.invocation.Man">
+	 <invocation>
+      <method-name>sayHello</method-name>
+      <method-param-values>
+         <method-param-value>Chris</method-param-value>
+     </method-param-values>
+   </invocation>
+ </bean>
+</beans>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<beans>
+  <bean id ="Boy" class="cn.mayfly.test.autowired.Boy">
+    <field name="name" autowiredType="byName" />
+  </bean>
+  <bean id ="Girl" class="cn.mayfly.test.autowired.Girl">
+    <field name="age" autowiredType="byType"/>
+  </bean>
+  
+  <bean id ="name" class="java.lang.String">
+    <constructor>
+       <constructor-arg value="Chris"/>
+     </constructor>
+  </bean>
+  <bean id ="age" class="java.lang.Integer">
+     <constructor>
+       <constructor-arg value="28"/>
+     </constructor>
+  </bean>
+</beans>

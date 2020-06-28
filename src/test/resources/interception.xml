@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<beans>
+	<bean id="Bean1" class="cn.mayfly.test.interception.object.Child">
+		<interception>
+			<method-name>sayHello</method-name>
+			<method-param-types>
+				<method-param-type>java.lang.String</method-param-type>
+			</method-param-types>
+			<interceptor class="cn.mayfly.test.interception.object.ChildInterceptor"/>
+			<interceptor class="cn.mayfly.test.interception.object.ChildInterceptor2"/>
+		</interception>
+		<proxy-interfaces>cn.mayfly.test.interception.object.Young</proxy-interfaces>
+	</bean>
+	<bean id="Bean2" class="cn.mayfly.test.interception.object.Child">
+		<interception>
+			<method-name>sayHello</method-name>
+			<method-param-types>
+				<method-param-type>java.lang.String</method-param-type>
+			</method-param-types>
+			<interceptor class="cn.mayfly.test.interception.object.ChildInterceptor"/>
+			<interceptor class="cn.mayfly.test.interception.object.ChildInterceptor2"/>
+		</interception>
+	</bean>
+</beans>

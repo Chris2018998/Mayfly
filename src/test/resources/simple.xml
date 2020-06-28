@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<beans>
+ <bean id ="Bean1" class="cn.mayfly.test.simple.object.Company">
+  <init-method>init</init-method>
+  <destroy-method>destroy</destroy-method>
+ </bean>
+ <bean id ="Bean2" class="cn.mayfly.test.simple.object.Company">
+  <singleton>true</singleton>
+ </bean>
+ <bean id ="Bean3" class="cn.mayfly.test.simple.object.Company">
+  <singleton>false</singleton>
+ </bean>
+
+ <bean id ="child" class="cn.mayfly.test.simple.object.Child">
+   <parent>father</parent>
+   <property name="addr" value="中国,深圳"/>
+ </bean>
+  <bean id ="father" class="cn.mayfly.test.simple.object.Parent">
+   <parent>grandfather</parent>
+   <property name="company"  value="Jmin"/>
+ </bean>
+ <bean id ="grandfather" class="cn.mayfly.test.simple.object.Grandfather">
+  <property name="name" value="Chris"/>
+  <property name="sex"  value="Man"/>
+ </bean>
+</beans>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<beans>
+ <include file="classpath:include2.xml"/>
+ <bean id ="Bean1" class="cn.mayfly.test.include.object.Computer">
+ 	 <property name="keyBoard" ref="keyBoard"/>
+ 	 <property name="monitor"  ref="monitor"/>
+ </bean>
+</beans>

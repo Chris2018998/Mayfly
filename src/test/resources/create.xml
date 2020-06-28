@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<beans>
+ <bean id ="Bean1" class="cn.mayfly.test.create.object.Toy">
+    <constructor>
+      <constructor-arg value="Cat"/>
+    </constructor>
+ </bean>
+ <bean id ="Bean2" class="cn.mayfly.test.create.object.Toy">
+   <constructor factory-method="create">
+ 	    <constructor-arg value="Cat"/>
+ 	</constructor>
+ </bean>
+ <bean id ="Bean3" class="cn.mayfly.test.create.object.Toy">
+    <constructor factory-bean="factory" factory-method="create">
+ 	  <constructor-arg value="Cat"/>
+ 	</constructor>
+ </bean>
+ <bean id ="factory" class="cn.mayfly.test.create.object.ToyFactory"/>
+</beans>

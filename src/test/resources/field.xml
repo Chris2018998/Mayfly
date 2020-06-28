@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<beans>
+  <bean id ="Bean1" class="cn.mayfly.test.field.Boy">
+   <field name="name" value="Chris"/>
+  </bean>
+  <bean id ="Bean2" class="cn.mayfly.test.field.Boy">
+   <field name="age"  value="28"/>
+  </bean>
+</beans>

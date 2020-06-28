@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<beans>
+ <bean id ="Wife" class="cn.mayfly.test.bijection.Wife">
+  <property name="name" value="Summer"/>
+  <property name="husband" ref="Husband"/>
+ </bean>
+ <bean id ="Husband" class="cn.mayfly.test.bijection.Husband">
+   <property name="name" value="Chris"/>
+   <property name="wife" ref="Wife"/>
+ </bean>
+</beans>
