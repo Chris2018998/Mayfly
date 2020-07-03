@@ -1,3 +1,1 @@
-# Mayfly
-Java Ioc Micro-Container
-
+该作品是06年开发，未来有时间可能重构一下。
